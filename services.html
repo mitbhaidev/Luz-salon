@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services — Luz Salon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Navbar -->
+ <header class="fixed w-full bg-white shadow z-50">
+  <nav class="container mx-auto flex justify-between items-center p-5">
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold text-pink-600">Luz Salon</h1>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-6 font-medium">
+      <li><a href="index.html" class="hover:text-pink-600 transition">Home</a></li>
+      <li><a href="services.html" class="hover:text-pink-600 transition">Services</a></li>
+      <li><a href="team.html" class="hover:text-pink-600 transition">Team</a></li>
+      <li><a href="gallery.html" class="hover:text-pink-600 transition">Gallery</a></li>
+      <li><a href="contact.html" class="hover:text-pink-600 transition">Contact</a></li>
+    </ul>
+
+    <!-- Book Now (Desktop Only) -->
+    <a href="https://wa.me/919999999999"
+       class="hidden md:inline bg-pink-600 text-white px-4 py-2 rounded-lg shadow hover:bg-pink-700 transition">
+       Book Now
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden z-50">
+      <!-- Hamburger -->
+      <div id="hamburger" class="space-y-1">
+        <span class="block w-6 h-0.5 bg-pink-600"></span>
+        <span class="block w-6 h-0.5 bg-pink-600"></span>
+        <span class="block w-6 h-0.5 bg-pink-600"></span>
+      </div>
+      <!-- Close Icon (hidden by default) -->
+      <div id="close-icon" class="hidden text-3xl text-pink-600">✖</div>
+    </button>
+  </nav>
+
+  <!-- Full Page Mobile Menu -->
+  <div id="mobile-menu"
+       class="fixed inset-0 hidden flex-col items-center justify-center bg-white text-center space-y-8 text-2xl font-semibold transform translate-y-full transition-all duration-500 ease-in-out">
+    <a href="index.html" class="hover:text-pink-600">Home</a>
+    <a href="services.html" class="hover:text-pink-600">Services</a>
+    <a href="team.html" class="hover:text-pink-600">Team</a>
+    <a href="gallery.html" class="hover:text-pink-600">Gallery</a>
+    <a href="contact.html" class="hover:text-pink-600">Contact</a>
+    <a href="https://wa.me/919999999999"
+       class="bg-pink-600 text-white px-6 py-3 rounded-lg shadow hover:bg-pink-700 transition">
+       Book Now
+    </a>
+  </div>
+</header>
+
+  <!-- Hero -->
+  <section class="min-h-[40vh] flex items-center justify-center bg-cover bg-center relative pt-24"
+         style="background-image:url('images/servicepage.jpg')">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 text-center text-white px-6">
+      <h1 class="text-4xl md:text-6xl font-bold animate-fade-in">Our Services</h1>
+      <p class="mt-4 text-lg opacity-90">Premium care for hair, beauty & wellness.</p>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <main class="container mx-auto px-6 py-16">
+    <!-- Categories -->
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Hair -->
+      <div class="bg-white rounded-2xl shadow p-6 animate-slide-left">
+        <img src="images/haircolor.jpg" class="rounded-lg mb-4" alt="Hair">
+        <h3 class="text-xl font-semibold mb-2">Hair Styling & Color</h3>
+        <ul class="text-gray-600 space-y-2">
+          <li>Advanced Haircut & Styling</li>
+          <li>Keratin / Smoothening</li>
+        </ul>
+      </div>
+
+      <!-- Makeup -->
+      <div class="bg-white rounded-2xl shadow p-6 animate-fade-in">
+        <img src="images/makup.jpg" class="rounded-lg mb-4" alt="Makeup">
+        <h3 class="text-xl font-semibold mb-2">Makeup & Grooming</h3>
+        <ul class="text-gray-600 space-y-2">
+          <li>Party / HD / Bridal Makeup</li>
+          <li>Facial & Clean-up</li>
+        </ul>
+      </div>
+
+      <!-- Spa -->
+      <div class="bg-white rounded-2xl shadow p-6 animate-slide-right">
+        <img src="images/wxing3.jpg" class="rounded-lg mb-4" alt="Spa">
+        <h3 class="text-xl font-semibold mb-2">wxing</h3>
+        <ul class="text-gray-600 space-y-2">
+          <li>Threading / Waxing</li>
+          <li>Skin Treatments</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow p-6 animate-slide-right">
+        <img src="images/pedicures.jpg" class="rounded-lg mb-4" alt="Spa">
+        <h3 class="text-xl font-semibold mb-2">Pedicures</h3>
+        <ul class="text-gray-600 space-y-2">
+          <li>Clean up parts</li>
+          <li> glow Skin </li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow p-6 animate-slide-right">
+        <img src="images/facial2.jpg" class="rounded-lg mb-4" alt="Spa">
+        <h3 class="text-xl font-semibold mb-2">Facials</h3>
+        <ul class="text-gray-600 space-y-2">
+          <li>Glow & rejuvenate with facials</li>
+          <li>face Skin Treatments</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-14">
+      <a href="https://wa.me/9714288939"
+         class="inline-block bg-pink-600 text-white px-8 py-3 rounded-xl shadow hover:bg-pink-700">
+        Book on WhatsApp
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-400 py-8 text-center">
+    © 2025 Luxury Salon. All rights reserved.
+  </footer>
+
+  <!-- WhatsApp Floating -->
+  <a href="https://wa.me/919714288939"
+     class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600">💬</a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery — Luz Salon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+ 
+    <header class="fixed w-full bg-white shadow z-50">
+  <nav class="container mx-auto flex justify-between items-center p-5">
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold text-pink-600">Luz Salon</h1>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-6 font-medium">
+      <li><a href="index.html" class="hover:text-pink-600 transition">Home</a></li>
+      <li><a href="services.html" class="hover:text-pink-600 transition">Services</a></li>
+      <li><a href="team.html" class="hover:text-pink-600 transition">Team</a></li>
+      <li><a href="gallery.html" class="hover:text-pink-600 transition">Gallery</a></li>
+      <li><a href="contact.html" class="hover:text-pink-600 transition">Contact</a></li>
+    </ul>
+
+    <!-- Book Now (Desktop Only) -->
+    <a href="https://wa.me/919714288939"
+       class="hidden md:inline bg-pink-600 text-white px-4 py-2 rounded-lg shadow hover:bg-pink-700 transition">
+       Book Now
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden z-50">
+      <!-- Hamburger -->
+      <div id="hamburger" class="space-y-1">
+        <span class="block w-6 h-0.5 bg-pink-600"></span>
+        <span class="block w-6 h-0.5 bg-pink-600"></span>
+        <span class="block w-6 h-0.5 bg-pink-600"></span>
+      </div>
+      <!-- Close Icon (hidden by default) -->
+      <div id="close-icon" class="hidden text-3xl text-pink-600">✖</div>
+    </button>
+  </nav>
+
+  <!-- Full Page Mobile Menu -->
+  <div id="mobile-menu"
+     class="fixed inset-0 hidden flex flex-col items-center justify-center bg-white text-center text-2xl font-semibold transform translate-y-full transition-all duration-500 ease-in-out">
+  
+  <nav class="flex flex-col space-y-8"> 
+    <a href="index.html" class="hover:text-pink-600">Home</a>
+    <a href="services.html" class="hover:text-pink-600">Services</a>
+    <a href="team.html" class="hover:text-pink-600">Team</a>
+    <a href="gallery.html" class="hover:text-pink-600">Gallery</a>
+    <a href="contact.html" class="hover:text-pink-600">Contact</a>
+    <a href="https://wa.me/919999999999"
+       class="bg-pink-600 text-white px-6 py-3 rounded-lg shadow hover:bg-pink-700 transition">
+       Book Now
+    </a>
+  </nav>
+</div>
+</header>
+
+
+  <!-- Hero -->
+   <section class="min-h-[40vh] flex items-center justify-center bg-cover bg-center relative pt-24"
+         style="background-image:url('images/gallerypag.jpg')">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 text-center text-white px-6">
+      <h1 class="text-4xl md:text-6xl font-bold animate-fade-in">Gallery</h1>
+      <p class="mt-4 opacity-90">A peek into our transformations</p>
+    </div>
+  </section>
+
+  <main class="container mx-auto px-6 py-16">
+  <!-- Pinterest Style Masonry Grid -->
+  <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+    <img src="images/gallery.jpg" alt="" class="w-full rounded-xl shadow hover:scale-105 transition-transform duration-300 break-inside-avoid">
+    <img src="images/gallery1.jpg" alt="" class="w-full rounded-xl shadow hover:scale-105 transition-transform duration-300 break-inside-avoid">
+    <img src="images/gallery2.jpg" alt="" class="w-full rounded-xl shadow hover:scale-105 transition-transform duration-300 break-inside-avoid">
+    <img src="images/gallery3.jpg" alt="" class="w-full rounded-xl shadow hover:scale-105 transition-transform duration-300 break-inside-avoid">
+    <img src="images/gallery4.jpg" alt="" class="w-full rounded-xl shadow hover:scale-105 transition-transform duration-300 break-inside-avoid">
+    <img src="images/gallery5.jpg" alt="" class="w-full rounded-xl shadow hover:scale-105 transition-transform duration-300 break-inside-avoid">
+    <img src="images/gallery6.jpg" alt="" class="w-full rounded-xl shadow hover:scale-105 transition-transform duration-300 break-inside-avoid">
+    <img src="images/gallery7.jpg" alt="" class="w-full rounded-xl shadow hover:scale-105 transition-transform duration-300 break-inside-avoid">
+    <img src="images/gallery8.jpg" alt="" class="w-full rounded-xl shadow hover:scale-105 transition-transform duration-300 break-inside-avoid">
+    <img src="images/gallery9.jpg" alt="" class="w-full rounded-xl shadow hover:scale-105 transition-transform duration-300 break-inside-avoid">
+  </div>
+
+  <div class="text-center mt-12">
+    <a href="https://wa.me/919714288939"
+       class="inline-block bg-pink-600 text-white px-8 py-3 rounded-xl shadow hover:bg-pink-700">
+      Book Your Makeover →
+    </a>
+  </div>
+</main>
+
+  <footer class="bg-black text-gray-400 py-8 text-center">© 2025 Luxury Salon. All rights reserved.</footer>
+  <a href="https://wa.me/919714288939" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600">💬</a>
+  <script src="script.js" defer></script>
+</body>
+</html>

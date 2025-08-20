@@ -1,0 +1,14 @@
+/* Reuse across all pages */
+html { scroll-behavior: smooth; }
+@keyframes fadeIn { from {opacity:0; transform:translateY(10px)} to {opacity:1; transform:translateY(0)} }
+@keyframes slideL { from {opacity:0; transform:translateX(-24px)} to {opacity:1; transform:translateX(0)} }
+@keyframes slideR { from {opacity:0; transform:translateX(24px)} to {opacity:1; transform:translateX(0)} }
+.animate-fade-in { animation: fadeIn .8s ease both; }
+.animate-slide-left { animation: slideL .8s ease both; }
+.animate-slide-right { animation: slideR .8s ease both; }
+
+/* Active link helper */
+.nav-link.active { color: #db2777; }
+
+/* Simple container helper for non-tailwind runners */
+.container { max-width: 1200px; margin: 0 auto; }

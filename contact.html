@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Luz Salon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <header class="fixed w-full bg-white shadow z-50">
+  <nav class="container mx-auto flex justify-between items-center p-5">
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold text-pink-600">Luz Salon</h1>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-6 font-medium">
+      <li><a href="index.html" class="hover:text-pink-600 transition">Home</a></li>
+      <li><a href="services.html" class="hover:text-pink-600 transition">Services</a></li>
+      <li><a href="team.html" class="hover:text-pink-600 transition">Team</a></li>
+      <li><a href="gallery.html" class="hover:text-pink-600 transition">Gallery</a></li>
+      <li><a href="contact.html" class="hover:text-pink-600 transition">Contact</a></li>
+    </ul>
+
+    <!-- Book Now (Desktop Only) -->
+    <a href="https://wa.me/919999999999"
+       class="hidden md:inline bg-pink-600 text-white px-4 py-2 rounded-lg shadow hover:bg-pink-700 transition">
+       Book Now
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden z-50">
+      <!-- Hamburger -->
+      <div id="hamburger" class="space-y-1">
+        <span class="block w-6 h-0.5 bg-pink-600"></span>
+        <span class="block w-6 h-0.5 bg-pink-600"></span>
+        <span class="block w-6 h-0.5 bg-pink-600"></span>
+      </div>
+      <!-- Close Icon (hidden by default) -->
+      <div id="close-icon" class="hidden text-3xl text-pink-600">✖</div>
+    </button>
+  </nav>
+
+  <!-- Full Page Mobile Menu -->
+ <div id="mobile-menu"
+     class="fixed inset-0 hidden flex flex-col items-center justify-center bg-white text-center text-2xl font-semibold transform translate-y-full transition-all duration-500 ease-in-out">
+  
+  <nav class="flex flex-col space-y-8"> 
+    <a href="index.html" class="hover:text-pink-600">Home</a>
+    <a href="services.html" class="hover:text-pink-600">Services</a>
+    <a href="team.html" class="hover:text-pink-600">Team</a>
+    <a href="gallery.html" class="hover:text-pink-600">Gallery</a>
+    <a href="contact.html" class="hover:text-pink-600">Contact</a>
+    <a href="https://wa.me/919999999999"
+       class="bg-pink-600 text-white px-6 py-3 rounded-lg shadow hover:bg-pink-700 transition">
+       Book Now
+    </a>
+  </nav>
+</div>
+</header>
+
+
+  <!-- Hero -->
+  <section class="min-h-[40vh] flex items-center justify-center bg-cover bg-center relative pt-24"
+         style="background-image:url('images/contactpage.jpg')">
+  <div class="absolute inset-0 bg-black/50"></div>
+  <div class="relative z-10 text-center text-white px-6">
+    <h1 class="text-4xl md:text-6xl font-bold animate-fade-in">Get In Touch</h1>
+    <p class="mt-4 opacity-90">We’re here to help you shine</p>
+  </div>
+</section>
+
+  <!-- Contact Cards -->
+  <main class="container mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-2xl shadow p-6 text-center animate-slide-left">
+        <div class="text-3xl">📍</div>
+        <h3 class="text-xl font-semibold mt-2">Address</h3>
+        <p class="text-gray-600 mt-2">123 Luxury Street, City Center, Mumbai</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6 text-center animate-fade-in">
+        <div class="text-3xl">📞</div>
+        <h3 class="text-xl font-semibold mt-2">Phone</h3>
+        <p class="text-gray-600 mt-2">+91 98765 43210</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6 text-center animate-slide-right">
+        <div class="text-3xl">✉️</div>
+        <h3 class="text-xl font-semibold mt-2">Email</h3>
+        <p class="text-gray-600 mt-2">hello@luxurysalon.com</p>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="mt-12">
+      <!-- Replace YOUR_API_KEY or just use a static map image if you prefer -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.218524458514!2d-122.41941578468163!3d37.7749293797593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858066f2c3d97f%3A0x1d5a7d7b0d7a0c8b!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1628989803138!5m2!1sen!2sus"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-xl shadow-lg"></iframe>
+    </div>
+
+    <!-- CTA Band -->
+    <div class="mt-12 bg-pink-600 text-white rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between">
+      <div>
+        <h3 class="text-2xl font-bold">Ready for a makeover?</h3>
+        <p class="opacity-90">Chat with us on WhatsApp and book your slot instantly.</p>
+      </div>
+      <a href="https://wa.me/919999999999"
+         class="mt-4 md:mt-0 inline-block bg-white text-pink-600 font-semibold px-6 py-3 rounded-xl shadow hover:bg-gray-100">
+        Book on WhatsApp →
+      </a>
+    </div>
+  </main>
+
+  <footer class="bg-black text-gray-400 py-8 text-center">© 2025 Luxury Salon. All rights reserved.</footer>
+  <a href="https://wa.me/919999999999" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600">💬</a>
+  <script src="script.js" defer></script>
+</body>
+</html>
